@@ -117,6 +117,7 @@ div.stats {
     flex-direction: column;
     align-items: center;
     gap: 52px;
+    padding-bottom: 100px;
 }
 
 .reasons h1 {
@@ -154,4 +155,141 @@ div.stats {
     font-size: 28px;
     font-family: "Montserrat";
     margin-bottom: 4px
+}
+
+.bar {
+    height: 20px;
+    width: 100%;
+    background: repeating-linear-gradient(
+    -55deg,
+    rgba(0,0,0,0),
+    rgba(0,0,0,0) 20px,
+    var(--accent) 20px,
+    var(--accent) 40px
+);
+}
+
+.construction {
+    color: var(--accent);
+    text-align: center;
+    padding-bottom: 128px;
+}
+
+.construction h1 {
+    font-size: 64px;
+    max-width: 60%;
+    margin: 48px auto 32px auto;
+}
+
+.construction h3 {
+    font-size: 32px;
+    font-weight: 400;
+    max-width: 40%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 889px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav.navbar {
+        width: 100%;
+    }
+
+    .navbar div.links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    div.links img {
+        height: 38px;
+    }
+
+    div.links a {
+        font-size: 16px;
+    }
+
+    section.hero {
+        height: 60vh;
+    }
+
+    .hero .document {
+        width: 85%;
+        max-width: 90%;
+        top: 20%;
+        padding-top: 8vh;
+    }
+
+    .document h1 {
+        font-size: 56px;
+    }
+
+    .document h2 {
+        font-size: 32px;
+    }
+
+    .document p {
+        max-width: 80%;
+        text-align: center;
+    }
+    
+    .stats {
+        padding: 0 20px;
+    }
+
+    .statistic {
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    .statistic h3 {
+        font-size: 38px;
+        font-family: "Montserrat";
+        margin-bottom: 4px;
+        font-weight: 700;
+    }
+    
+    .statistic p {
+        font-size: 14px;
+        font-family: "Montserrat";
+        font-weight: 400;
+    }
+
+    .reasons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 52px;
+        padding-bottom: 100px;
+    }
+    
+    .reasons h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 72px;
+        margin-bottom: 24px;
+    }
+    
+    .reasons .card {
+        width: 85%;
+        padding: 24px 24px;
+    }
+    
+    .construction h1 {
+        font-size: 42px;
+        max-width: 80%;
+        margin: 48px auto 32px auto;
+    }
+    
+    .construction h3 {
+        font-size: 28px;
+        font-weight: 400;
+        max-width: 70%;
+        margin: auto;
+    }
+
 }
