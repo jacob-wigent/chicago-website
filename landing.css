@@ -210,18 +210,18 @@ div.stats {
     }
 
     div.links a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     section.hero {
-        height: 60vh;
+        height: 80vh;
     }
 
     .hero .document {
         width: 85%;
         max-width: 90%;
         top: 20%;
-        padding-top: 8vh;
+        padding-top: 12vh;
     }
 
     .document h1 {
